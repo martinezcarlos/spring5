@@ -1,17 +1,20 @@
 /*
  * Developed by carlosmartinez.
- * Last modified 24/07/18 23:13.
+ * Last modified 26/07/18 22:54.
  * Copyright (c) 2018. All rights reserved.
  */
 
 package mart.karle.spring5webapp.model;
 
-import java.util.Objects;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
+@Data
+@EqualsAndHashCode(of = {"id"})
 @Entity
 public class Publisher {
 
@@ -26,57 +29,6 @@ public class Publisher {
 
   public Publisher(final String name, final String address) {
     this.name = name;
-    this.address = address;
-  }
-
-  @Override
-  public int hashCode() {
-
-    return Objects.hash(id);
-  }
-
-  @Override
-  public boolean equals(final Object o) {
-    if (this == o) {
-      return true;
-    }
-    if (o == null || getClass() != o.getClass()) {
-      return false;
-    }
-    final Publisher publisher = (Publisher) o;
-    return Objects.equals(id, publisher.id);
-  }
-
-  @Override
-  public String toString() {
-    return "Publisher{" +
-        "id=" + id +
-        ", name='" + name + '\'' +
-        ", address='" + address + '\'' +
-        '}';
-  }
-
-  public Long getId() {
-    return id;
-  }
-
-  public void setId(final Long id) {
-    this.id = id;
-  }
-
-  public String getName() {
-    return name;
-  }
-
-  public void setName(final String name) {
-    this.name = name;
-  }
-
-  public String getAddress() {
-    return address;
-  }
-
-  public void setAddress(final String address) {
     this.address = address;
   }
 }

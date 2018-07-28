@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   ~ Developed by carlosmartinez.
-  ~ Last modified 24/07/18 23:12.
+  ~ Last modified 25/07/18 20:36.
   ~ Copyright (c) 2018. All rights reserved.
   -->
 
@@ -58,6 +58,14 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.0</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 
