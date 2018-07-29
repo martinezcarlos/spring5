@@ -1,6 +1,6 @@
 /*
  * Developed by carlosmartinez.
- * Last modified 27/07/18 0:49.
+ * Last modified 29/07/18 16:35.
  * Copyright (c) 2018. All rights reserved.
  */
 
@@ -38,20 +38,9 @@ public class Book {
       inverseJoinColumns = @JoinColumn(name = "author_id"))
   private Set<Author> authors = new HashSet<>();
 
-  public Book() {
-  }
-
   public Book(final String title, final String isbn, final Publisher publisher) {
     this.title = title;
     this.isbn = isbn;
     this.publisher = publisher;
-  }
-
-  public Book(final String title, final String isbn, final Publisher publisher,
-      final Set<Author> authors) {
-    this.title = title;
-    this.isbn = isbn;
-    this.publisher = publisher;
-    this.authors = authors;
   }
 }

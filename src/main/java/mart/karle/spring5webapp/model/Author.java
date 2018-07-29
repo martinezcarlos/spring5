@@ -1,6 +1,6 @@
 /*
  * Developed by carlosmartinez.
- * Last modified 27/07/18 0:49.
+ * Last modified 29/07/18 16:35.
  * Copyright (c) 2018. All rights reserved.
  */
 
@@ -31,17 +31,8 @@ public class Author {
   @ManyToMany(mappedBy = "authors")
   private Set<Book> books = new HashSet<>();
 
-  public Author() {
-  }
-
   public Author(final String firstName, final String lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
-  }
-
-  public Author(final String firstName, final String lastName, final Set<Book> books) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.books = books;
   }
 }

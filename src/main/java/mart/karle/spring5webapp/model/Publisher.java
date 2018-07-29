@@ -1,6 +1,6 @@
 /*
  * Developed by carlosmartinez.
- * Last modified 26/07/18 22:54.
+ * Last modified 29/07/18 16:35.
  * Copyright (c) 2018. All rights reserved.
  */
 
@@ -23,9 +23,6 @@ public class Publisher {
   private Long id;
   private String name;
   private String address;
-
-  public Publisher() {
-  }
 
   public Publisher(final String name, final String address) {
     this.name = name;

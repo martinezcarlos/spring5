@@ -1,6 +1,6 @@
 /*
  * Developed by carlosmartinez.
- * Last modified 24/07/18 23:13.
+ * Last modified 28/07/18 15:42.
  * Copyright (c) 2018. All rights reserved.
  */
 
@@ -38,7 +38,7 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
   private void initData() {
     //Eric
     final Author eric = new Author("Eric", "Evans");
-    final Publisher hc = new Publisher("Harper Colins", "Harp street, 123");
+    final Publisher hc = new Publisher("Harper Collins", "Harp street, 123");
     final Book ddd = new Book("Domain Driven Design", "1234", hc);
     eric.getBooks().add(ddd);
     ddd.getAuthors().add(eric);
